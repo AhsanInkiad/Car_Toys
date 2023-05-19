@@ -1,4 +1,4 @@
-.Laform {
+.Laform1 {
     --input-focus: #2d8cf0;
     --font-color: #323232;
     --font-color-sub: #666;
@@ -14,6 +14,21 @@
     border-radius: 5px;
     border: 2px solid #EAB902;
     box-shadow: 4px 4px  #EAB902;
+  }
+  .Laform2 {
+    --input-focus: #2d8cf0;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    padding: 20px;
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    gap: 20px;
+
   }
   
   .Latitle {
@@ -58,6 +73,10 @@
   }
   
   .Labutton-log {
+    --font-color: #323232;
+
+    --bg-color: #fff;
+    --main-color: #323232;
     
     cursor: pointer;
     width: 40px;
@@ -74,6 +93,7 @@
   }
   
   .Laicon {
+    --main-color: #323232;
     width: 24px;
     height: 24px;
     fill: var(--main-color);
