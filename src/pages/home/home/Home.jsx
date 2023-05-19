@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css'
+import Tab from '../tabs/Tab';
 
 const Home = () => {
     return (
@@ -97,6 +98,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <p className='text-center mt-16 mb-16 text-white font-bold text-3xl'>Toys by category :</p>
+            <Tab ></Tab>
 
 
         </div>

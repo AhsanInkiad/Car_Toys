@@ -1,0 +1,132 @@
+[
+    {
+        "c_id": 1,
+        "category": "Vintage_Car",
+        "toys": [
+            {
+                "picture": "sports_car1.jpg",
+                "name": "Mustang GT",
+                "price": "$29.99",
+                "rating": 4.5,
+                "seller_name": "Toni Kroos",
+                "seller_email": "tonibhai@gmail.com",
+                "available_quantity": 20,
+                "description": "Very good car. Bissho shera"
+            },
+            {
+                "picture": "sports_car2.jpg",
+                "name": "Rx-8",
+                "price": "$19.99",
+                "rating": 4,
+                "seller_name": "Luka Modric",
+                "seller_email": "lukamodric@gmail.com",
+                "available_quantity": 15,
+                "description": "Very good car. Bissho shera"
+            }
+        ]
+    },
+    {
+        "c_id": 2,
+        "category": "Sports_Car",
+        "toys": [
+            {
+                "picture": "offroad_car1.jpg",
+                "name": "GTI-8",
+                "price": "$24.99",
+                "rating": 5,
+                "seller_name": "Toni Kroos",
+                "seller_email": "tonibhai@gmail.com",
+                "available_quantity": 30,
+                "description": "Very good car. Bissho shera"
+            },
+            {
+                "picture": "offroad_car2.jpg",
+                "name": "Supra",
+                "price": "$32.99",
+                "rating": 4.5,
+                "seller_name": "Toni Kroos",
+                "seller_email": "tonibhai@gmail.com",
+                "available_quantity": 18,
+                "description": "Very good car. Bissho shera"
+            }
+        ]
+    },
+    {
+        "c_id": 3,
+        "category": "Jeep",
+        "toys": [
+            {
+                "picture": "vintage_car1.jpg",
+                "name": "X-Trail",
+                "price": "$39.99",
+                "rating": 4,
+                "seller_name": "Casemiro",
+                "seller_email": "casemiro@gmail.com",
+                "available_quantity": 15,
+                "description": "Very good car. Bissho shera"
+            },
+            {
+                "picture": "vintage_car2.jpg",
+                "name": "Landcruser",
+                "price": "$27.99",
+                "rating": 5,
+                "seller_name": "Luka Modric",
+                "seller_email": "lukamodric@gmail.com",
+                "available_quantity": 10,
+                "description": "Very good car. Bissho shera"
+            }
+        ]
+    },
+    {
+        "c_id": 4,
+        "category": "Trucks",
+        "toys": [
+            {
+                "picture": "monster_truck1.jpg",
+                "name": "Hyundai VTA",
+                "price": "$34.99",
+                "rating": 4,
+                "seller_name": "Casemiro",
+                "seller_email": "casemiro@gmail.com",
+                "available_quantity": 24,
+                "description": "Very good car. Bissho shera"
+            },
+            {
+                "picture": "monster_truck2.jpg",
+                "name": "Range Wheel",
+                "price": "$29.99",
+                "rating": 4.1,
+                "seller_name": "Toni Kroos",
+                "seller_email": "tonibhai@gmail.com",
+                "available_quantity": 27,
+                "description": "Very good car. Bissho shera"
+            }
+        ]
+    },
+    {
+        "c_id": 5,
+        "category": "normal_cars",
+        "toys": [
+            {
+                "picture": "luxury_car1.jpg",
+                "name": "Voxy",
+                "price": "$44.99",
+                "rating": 5,
+                "seller_name": "Luka Modric",
+                "seller_email": "lukamodric@gmail.com",
+                "available_quantity": 18,
+                "description": "Very good car. Bissho shera"
+            },
+            {
+                "picture": "luxury_car2.jpg",
+                "name": "Viper",
+                "price": "$49.99",
+                "rating": 4,
+                "seller_name": "Toni Kroos",
+                "seller_email": "tonibhai@gmail.com",
+                "available_quantity": 12,
+                "description": "Very good car. Bissho shera"
+            }
+        ]
+    }
+]
