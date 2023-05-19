@@ -2,9 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css'
 const Login = () => {
+    const handleLogin = event =>{
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(email, password);
+
+    }
     return (
         <div className='flex py-20'>
-            <form className="Laform mx-auto">
+            <form onSubmit={handleLogin} className="Laform mx-auto">
                 <div className="Latitle mx-auto  text-center"> <span className=''></span>     Welcome<br /><span>Log in to continue :</span></div>
                 <input type="email" placeholder="Email" name="email" className="Lainput" required />
                 <input type="password" placeholder="Password" name="password" className="Lainput" required />
