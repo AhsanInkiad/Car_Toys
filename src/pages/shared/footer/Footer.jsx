@@ -9,7 +9,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10 bg-[#1D1F1F] rounded-lg md:grid md:grid-cols-3 lg:flex justify-between">
+            <footer className="footer p-10 bg-[#1D1F1F]  md:grid md:grid-cols-3 lg:flex justify-between">
                 {/* Logo and website name */}
                 <div className='my-auto'>
                     <Link to='/'><div className='flex  space-x-4 btn btn-ghost  bg-[#1D1F1F] h-20 '>
