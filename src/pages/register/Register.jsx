@@ -5,7 +5,7 @@ import { AuthContext } from '../../providers/AuthProvider';
 
 const Register = () => {
     const [err, setErr] = useState('');
-    const { createUser, setDp } = useContext(AuthContext);
+    const { createUser, setDp,  signIn } = useContext(AuthContext);
 
     const navigate = useNavigate();
 
@@ -32,7 +32,7 @@ const Register = () => {
                 setDp(photo);
                 setErr('');
                 {/* Navigate to log in when registration is done */}
-                navigate('/login')
+                navigate('/');
                 
                 event.target.reset();
             })
@@ -40,6 +40,8 @@ const Register = () => {
                 const errorMessage = error.message;
                 setErr(errorMessage.slice(9,));
             })
+
+            
     }
     return (
         <div className='flex py-20'>
