@@ -6,9 +6,9 @@ import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 
 const Login = () => {
     const [err, setErr] = useState('');
-    const { user, setUser, signIn, GooglesignIn } = useContext(AuthContext);
+    const { user, setUser, signIn, GooglesignIn, setCount, dp } = useContext(AuthContext);
 
-    const [profile, setProfile] = useState(null);
+    const [profile, setProfile, ] = useState(null);
     const navigate = useNavigate();
     // const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
@@ -27,8 +27,9 @@ const Login = () => {
                 setUser(loggedUser);
 
                 setProfile(loggedUser);
-
+                loggedUser.photoURL = dp;
                 console.log(loggedUser);
+                setCount(1);
                 navigate('/');
 
                 setErr('');
@@ -36,6 +37,7 @@ const Login = () => {
             })
             .catch(error => {
                 const errors = error.message;
+                console.log(errors);
                 setErr(errors.slice(9,));
             })
     }
@@ -44,6 +46,7 @@ const Login = () => {
         GooglesignIn(provider)
             .then(result => {
                 const Guser = result.user;
+                setCount(1);
                 console.log(Guser);
                 setProfile(Guser);
                 setUser(Guser);

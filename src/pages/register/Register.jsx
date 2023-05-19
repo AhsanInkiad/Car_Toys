@@ -5,7 +5,7 @@ import { AuthContext } from '../../providers/AuthProvider';
 
 const Register = () => {
     const [err, setErr] = useState('');
-    const { createUser } = useContext(AuthContext);
+    const { createUser, setDp } = useContext(AuthContext);
 
     const navigate = useNavigate();
 
@@ -22,9 +22,14 @@ const Register = () => {
         console.log(name, email, password, photo);
 
 
-        createUser(email, password)
+        createUser(email, password, photo)
             .then(result => {
                 const createdUser = result.user;
+                console.log(createdUser);
+              
+                createdUser.photoURL = photo;
+                result.user.photoURL = photo;
+                setDp(photo);
                 setErr('');
                 {/* Navigate to log in when registration is done */}
                 navigate('/login')
