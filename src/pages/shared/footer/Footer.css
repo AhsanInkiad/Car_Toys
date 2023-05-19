@@ -202,5 +202,5 @@
   
   .subscribe .submit-btn:hover {
     background-color: #EAB902;
-    box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
+    box-shadow: -5px 6px 20px 0px rgba(255, 255, 255, 0.569);
   }

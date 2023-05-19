@@ -9,7 +9,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10 bg-[#1D1F1F] ">
+            <footer className="footer p-10 bg-[#1D1F1F] rounded-lg">
                 {/* Logo and website name */}
                 <div className='my-auto'>
                     <Link to='/'><div className='flex  space-x-4 btn btn-ghost  bg-[#1D1F1F] h-20 '>
@@ -27,9 +27,9 @@ const Footer = () => {
                 </div>
                 {/* Address */}
                 <div className='my-auto'>
-                    <p className='mx-auto text-white font-bold text-xl'>Address :</p>
-                    <p className='flex '>  <BiMap className='mt-1 text-[#EAB902]'> </BiMap> - Gulshan-Badda, Link Road, Dhaka <br /> Bangladesh. [Store-1]   </p>
-                    <p className='flex '>  <BiMap className='mt-1 text-[#EAB902]'> </BiMap> - Dhanmondi-32, Ar-Plaza, Dhaka <br /> Bangladesh. [Store-2]   </p>
+                    <p className=' text-white font-bold text-xl'>Address :</p>
+                    <p className='flex '>  <BiMap className='mt-1 text-[#EAB902]'> </BiMap> - Gulshan-Badda, Link Road, Dhaka <br /> .. Bangladesh. [Store-1]   </p>
+                    <p className='flex '>  <BiMap className='mt-1 text-[#EAB902]'> </BiMap> - Dhanmondi-32, Ar-Plaza, Dhaka <br /> .. Bangladesh. [Store-2]   </p>
                 </div>
                 {/* Subscribe */}
                 <div className="my-auto subscribe">
@@ -39,7 +39,7 @@ const Footer = () => {
                     <div className="submit-btn">SUBMIT</div>
                 </div>
                 {/* Social Media */}
-                <div className=''>
+                <div className='lg:-mr-36'>
                     <p className='mx-auto text-white font-bold text-xl'>Find us on :</p>
                     <div className="Lamain">
                         <div className="Laup">
