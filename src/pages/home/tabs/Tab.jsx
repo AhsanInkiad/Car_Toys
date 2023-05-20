@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { FaRegStar, FaStar } from "react-icons/fa";
 import Rating from 'react-rating';
 import './Tab.css'
+import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../providers/AuthProvider';
 
 const Tab = () => {
     const [currentTab, setCurrentTab] = useState('1');
     const [tabs, setTabs] = useState([]);
+    const {picId, setPicId} = useContext((AuthContext));
 
     useEffect(() => {
         fetch('http://localhost:5000/toys')
@@ -46,7 +49,7 @@ const Tab = () => {
                                                     fullSymbol={<FaStar></FaStar>}
                                                 ></Rating>
                                                 <div className="card-actions ">
-                                                    <button className="btn btn-primary">View Details</button>
+                                                    <Link to={`/details/${tab._id}`}><button onClick={() => setPicId(toy.picture)} className="btn btn-primary">View Details</button></Link>
                                                 </div>
                                             </div>
                                         </div>
