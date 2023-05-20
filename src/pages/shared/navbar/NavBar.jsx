@@ -45,8 +45,8 @@ const NavBar = () => {
                     <ul tabIndex={0} className="text-white menu menu-compact dropdown-content mt-3 p-2 shadow border border-[#EAB902] bg-[#1D1F1F] rounded-box w-52">
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='alltoys'>All Toys</Link></li>
-                        <li><a>My Toys</a></li>
-                        <li><Link to='addtoy'>Add a Toy</Link></li>
+                        {user && <li><a>My Toys</a></li>}
+                        {user && <li><Link to='addtoy'>Add a Toy</Link></li>}
                         <li><Link to='blogs'>Blog</Link></li>
 
                     </ul>
@@ -57,8 +57,8 @@ const NavBar = () => {
                 <ul className="menu menu-horizontal px-1">
                     <li><Link to='/' className='mr-2 btn btn-ghost'>Home</Link></li>
                     <li><Link to='alltoys' className='mr-2 btn btn-ghost'>All Toys</Link></li>
-                    <li><Link className='mr-2 btn btn-ghost'>My Toy</Link></li>
-                    <li><Link to='addtoy' className=' mr-2 btn btn-ghost'>  Add a Toy</Link></li>
+                    {user && <li><Link className='mr-2 btn btn-ghost'>My Toy</Link></li>}
+                    {user && <li><Link to='addtoy' className=' mr-2 btn btn-ghost'>  Add a Toy</Link></li>}
                     <li><Link to='blogs' className='btn btn-ghost'>Blog</Link></li>
                 </ul>
             </div>
