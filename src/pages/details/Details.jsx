@@ -16,7 +16,7 @@ const Details = () => {
     return (
         <div className='bg-[#0E0F0F] pt-12'>
 
-            <img className='mx-auto rounded-3xl border-4 border-[#EAB902] w-2/5 h-1/4' src={filteredToys.picture} />
+            <img className='mx-auto rounded-3xl border-4 border-[#EAB902] w-2/5 h-1/4 ' src={filteredToys.picture} />
             <p className='text-center text-3xl my-4 text-white'>Name: {filteredToys.name}</p>
             <p className='text-center mb-12'>
                 <Rating className=' rate mb-3 text-[#EAB902]'
