@@ -57,7 +57,7 @@ const NavBar = () => {
                 <ul className="menu menu-horizontal px-1">
                     <li><Link to='/' className='mr-2 btn btn-ghost'>Home</Link></li>
                     <li><Link to='alltoys' className='mr-2 btn btn-ghost'>All Toys</Link></li>
-                    {user && <li><Link className='mr-2 btn btn-ghost'>My Toy</Link></li>}
+                    {user && <li><Link to="mytoy" className='mr-2 btn btn-ghost'>My Toy</Link></li>}
                     {user && <li><Link to='addtoy' className=' mr-2 btn btn-ghost'>  Add a Toy</Link></li>}
                     <li><Link to='blogs' className='btn btn-ghost'>Blog</Link></li>
                 </ul>
