@@ -99,7 +99,7 @@ const Home = () => {
                 </div>
             </div>
             <p className='text-center mt-16 mb-16 text-white font-bold text-3xl'>Toys by category :</p>
-            <Tab ></Tab>
+            <Tab className='mb-16'></Tab>
 
 
         </div>

@@ -17,13 +17,13 @@ const Mytoy = () => {
     const handleDelete = id => {
         const proceed = confirm('Are you sure you want to delete?');
         if (proceed) {
-            fetch(`http://localhost:5000/addedtoys/${id}`,{
+            fetch(`http://localhost:5000/addedtoys/${id}`, {
                 method: 'DELETE'
             })
-            .then(res=> res.json())
+                .then(res => res.json())
                 .then(datas => {
                     console.log(datas);
-                    if(datas.deletedCount > 0){
+                    if (datas.deletedCount > 0) {
                         alert('Deleted successfully.');
                         const remaining = data.filter(toys => toys._id !== id);
                         setData(remaining);
@@ -49,7 +49,7 @@ const Mytoy = () => {
                 <table className="table w-full">
                     {/* head */}
                     <thead>
-                        <tr>
+                        <tr className='text-white'>
                             <th>Delete</th>
                             <th>Name</th>
                             <th>Category</th>
@@ -80,17 +80,19 @@ const Mytoy = () => {
                                         </div>
                                     </div>
                                 </td>
-                                <td>
+                                <td className='text-white'>
                                     {toy.toyCategory}
                                 </td>
-                                <td>{toy.toyPrice}</td>
-                                <td className='text-center'>{toy.toyRating}</td>
-                                <td className='text-center'>{toy.toyQuantity}</td>
+                                <td className='text-white'>{toy.toyPrice}</td>
+                                <td className='text-center text-white'>{toy.toyRating}</td>
+                                <td className='text-center text-white'>{toy.toyQuantity}</td>
                                 <th>
-                                <Link to={`/updatetoy/${toy._id}`}><button className="btn btn-outline btn-success btn-xs">Update</button></Link>
+                                    <Link to={`/updatetoy/${toy._id}`}><button className="btn btn-outline btn-success btn-xs">Update</button></Link>
+                                
                                 </th>
                                 <th>
-                                <Link to={`/viewdetails2/${toy._id}`}> <button className="btn btn-ghost btn-outline btn-xs">View Details</button></Link>  
+                                    <Link to={`/viewdetails2/${toy._id}`}> <button className="btn btn-outline btn-info btn-xs">View Details</button></Link>
+                                    
                                 </th>
                             </tr>)}
 
@@ -98,7 +100,7 @@ const Mytoy = () => {
                     </tbody>
                     {/* foot */}
                     <tfoot>
-                        <tr>
+                        <tr className='text-white'>
                             <th>Delete</th>
                             <th>Name</th>
                             <th>Category</th>

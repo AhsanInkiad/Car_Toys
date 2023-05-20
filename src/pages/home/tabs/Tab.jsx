@@ -14,11 +14,15 @@ const Tab = () => {
         fetch('http://localhost:5000/toys')
             .then(res => res.json())
             .then(data => setTabs(data.slice(0, 3)))
-    })
+    },[])
 
     const handleTabClick = (e) => {
         setCurrentTab(e.target.id);
     }
+
+    console.log(tabs)
+
+ 
 
     return (
         <div className='container pb-32'>
