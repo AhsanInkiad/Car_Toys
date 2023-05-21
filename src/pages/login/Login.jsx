@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Login.css'
 import { AuthContext } from '../../providers/AuthProvider';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
+import Swal from 'sweetalert2';
 
 const Login = () => {
     const [err, setErr] = useState('');
@@ -24,6 +25,11 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 const loggedUser = result.user;
+                Swal.fire(
+                    'Good job!',
+                    'Your toy has been added!',
+                    'success'
+                  )
                 setUser(loggedUser);
 
                 setProfile(loggedUser);
@@ -46,10 +52,16 @@ const Login = () => {
         GooglesignIn(provider)
             .then(result => {
                 const Guser = result.user;
+                Swal.fire(
+                    'Good job!',
+                    'Your toy has been added!',
+                    'success'
+                  )
                 setCount(1);
                 console.log(Guser);
                 setProfile(Guser);
                 setUser(Guser);
+               
                 navigate('/');
 
 

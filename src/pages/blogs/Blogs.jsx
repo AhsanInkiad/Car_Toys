@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Blogs = () => {
+    useEffect(() => {
+        document.title = "Fast | Blogs";
+      }, []);
     return (
         <div className='flex ml-20 justify-center text-white'>
           

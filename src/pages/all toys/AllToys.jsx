@@ -3,25 +3,29 @@ import { AuthContext } from '../../providers/AuthProvider';
 import { Link } from 'react-router-dom';
 
 const AllToys = () => {
+    useEffect(() => {
+        document.title = "Fast | All Toys";
+      }, []);
     const [tabs, setTabs] = useState([]);
     const [tabs2, setTabs2] = useState([]);
     const {fpicId, fsetPicId} = useContext((AuthContext));
 
     useEffect(() => {
-        fetch('http://localhost:5000/toys')
+        fetch('http://localhost:5000/toys?limit=10')
             .then(res => res.json())
             .then(data => setTabs(data))
     }, [])
 
   
     useEffect(() => {
-        fetch('http://localhost:5000/addedtoys')
+        fetch('http://localhost:5000/addedtoys?limit=10')
             .then(res => res.json())
             .then(data => setTabs2(data))
     }, [])
 
     return (
         <div>
+            
             <div className="overflow-x-auto">
                 <table className="table w-full">
                     <thead>
@@ -55,7 +59,7 @@ const AllToys = () => {
                                     <td>{toy.toyCategory}</td>
                                     <td>{toy.toyPrice}</td>
                                     <td className='pl-8'>{toy.toyQuantity}</td>
-                                    <td><button className='btn btn-outline btn-info btn-xs'>View Details</button></td>
+                                    <td>  <Link to={`/viewdetails2/${toy._id}`}><button className='btn btn-outline btn-info btn-xs'>View Details</button></Link>  </td>
                                   
                                 </tr>
                             

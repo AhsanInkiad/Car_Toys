@@ -11,7 +11,7 @@ import { AuthContext } from '../providers/AuthProvider';
 const ViewDetails3 = () => {
     const AfilteredToys = useLoaderData();
     const {fpicId, fsetPicId} = useContext((AuthContext));
-   const filteredToys = AfilteredToys.toysgula.find(toy => toy.picture === fpicId);
+    const filteredToys = AfilteredToys.toysgula.find(toy => toy.picture === fpicId);
     
     console.log(filteredToys)
     return (

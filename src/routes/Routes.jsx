@@ -12,6 +12,7 @@ import PrivateRoute from "./PrivateRoute";
 import UpdateToy from "../pages/update toy/UpdateToy";
 import ViewDetails2 from "../details 2/ViewDetails2";
 import ViewDetails3 from "../details 3/ViewDetails3";
+import NotFound from "../notfound/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/details/:id',
-        element: <Details></Details>,
+        element: <PrivateRoute><Details></Details></PrivateRoute>,
         loader: ({ params }) => fetch(`http://localhost:5000/toys/${params.id}`)
       },
 
@@ -65,13 +66,17 @@ const router = createBrowserRouter([
       },
       {
         path: '/viewdetails3/:id',
-        element: <ViewDetails3></ViewDetails3>,
+        element: <PrivateRoute> <ViewDetails3></ViewDetails3> </PrivateRoute>,
         loader: ({ params }) => fetch(`http://localhost:5000/toys/${params.id}`)
       }
 
 
     ]
   },
+  {
+    path: '*',
+    element: <NotFound></NotFound>
+  }
 ]);
 
 export default router;

@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css'
 import Tab from '../tabs/Tab';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import Marquee from "react-fast-marquee";
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "Fast & Curious | Home";
+      }, []);
+    useEffect(() => {
+
+        Aos.init({ duration: 2000 })
+
+    }, [])
     return (
         <div>
             <div className="hero  lg:min-h-screen" style={{ backgroundImage: `url("https://i.ibb.co/ZBt83fN/f214ef3fb8318145e170a682c29ddd4b.jpg")` }}>
                 <div className="hero-overlay bg-opacity-70">
 
-                    <div className="mx-auto  md:16 lg:mt-32 hero-content text-center text-white">
+                    <div data-aos="zoom-in" className="mx-auto md:16 lg:mt-32 hero-content text-center text-white">
                         <div className="lg:border p-8 max-w-md">
                             <h1 className="mb-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">Hello there</h1>
                             <p className="mb-5 ">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
@@ -40,7 +51,7 @@ const Home = () => {
 
             </div>
             <div>
-                <p className="heading">Gallery</p>
+                <p data-aos="zoom-in" className="heading">Gallery</p>
                 <div className="gallery-image">
                     <div className="img-box">
                         <img src="https://i.ibb.co/qysn6DN/david-maltais-BCKg-Fz-Jbwz4-unsplash.jpg" alt="" />
@@ -98,8 +109,20 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <p className='text-center mt-16 mb-16 text-white font-bold text-3xl'>Toys by category :</p>
+            <p data-aos="zoom-in" className=' text-center mt-16 mb-16 text-white font-bold text-3xl'>Toys by category :</p>
             <Tab className='mb-16'></Tab>
+            <p data-aos="zoom-in" className=' text-center text-white text-3xl font-bold mb-10'>Our Partners :</p>
+           <div className='w-1/2 mx-auto'>
+           <Marquee className=' border mb-32 py-4 '>
+                <img className='w-32 h-32 mr-36 rounded-lg' src="https://images.unsplash.com/photo-1601158935942-52255782d322?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80" />
+                <img className='w-32 h-32 mr-36 rounded-lg' src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" />
+                <img className='w-32 h-32 mr-36 rounded-lg' src="https://images.unsplash.com/photo-1557053964-937650b63311?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1597&q=80" />
+                <img className='w-32 h-32 mr-36 rounded-lg' src="https://images.unsplash.com/photo-1555597906-44a7f7e3e0e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" />
+           
+            </Marquee>
+
+           </div>
+           
 
 
         </div>

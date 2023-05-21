@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import './Register.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Register = () => {
     const [err, setErr] = useState('');
@@ -25,6 +26,11 @@ const Register = () => {
         createUser(email, password, photo)
             .then(result => {
                 const createdUser = result.user;
+                Swal.fire(
+                    'Good job!',
+                    'Your toy has been added!',
+                    'success'
+                  )
                 console.log(createdUser);
               
                 createdUser.photoURL = photo;
