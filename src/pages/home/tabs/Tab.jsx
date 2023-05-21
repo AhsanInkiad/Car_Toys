@@ -36,11 +36,11 @@ const Tab = () => {
                     <div >
                         {currentTab === `${tab.c_id}` && <div>
 
-                            <div className=' lg:flex lg:justify-between m-12'>
+                            <div className=' lg:flex md:gap-6 lg:justify-between m-12'>
                                 {
                                     tab.toysgula.map((toy) =>
                                         <div className="card mb-10 drop-shadow-2xl lg:card-side bg-[#1A1A1A] shadow-xl">
-                                            <figure><img className='h-40 w-full  lg:h-full lg:w-64' src={toy.picture} alt="Album" /></figure>
+                                            <figure><img className='h-40 w-full   lg:h-full lg:w-64' src={toy.picture} alt="Album" /></figure>
                                             <div className="card-body">
                                                 <h2 className="font-semibold text-white">Name: {toy.name}</h2>
                                                 <p className='font-semibold text-white'>Price: {toy.price}</p>

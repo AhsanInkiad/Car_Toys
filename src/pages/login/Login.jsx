@@ -52,12 +52,12 @@ const Login = () => {
         GooglesignIn(provider)
             .then(result => {
                 const Guser = result.user;
-                Swal.fire(
-                    'Good job!',
-                    'Your toy has been added!',
-                    'success'
-                  )
-                setCount(1);
+                // Swal.fire(
+                //     'Good job!',
+                //     'Your toy has been added!',
+                //     'success'
+                //   )
+                // setCount(1);
                 console.log(Guser);
                 setProfile(Guser);
                 setUser(Guser);

@@ -4,6 +4,7 @@ import Tab from '../tabs/Tab';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Marquee from "react-fast-marquee";
+import CardShow from '../card show/CardShow';
 
 const Home = () => {
     useEffect(() => {
@@ -120,8 +121,11 @@ const Home = () => {
                 <img className='w-16 h-16 md:w-20 md:h-20 lg:w-32 lg:h-32 mr-36 rounded-lg' src="https://images.unsplash.com/photo-1555597906-44a7f7e3e0e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" />
            
             </Marquee>
-
+            
            </div>
+           <p data-aos="zoom-in" className=' text-center text-white text-3xl font-bold mb-10'>Why Choose Us? :</p>
+
+           <CardShow className="h-3/4"></CardShow>
            
 
 
