@@ -16,7 +16,7 @@ const UpdateToy = () => {
         const uquantity = form.uquantity.value;
         const udescription = form.udescription.value;
         console.log("hi");
-        fetch(`http://localhost:5000/addedtoys/${id}`, {
+        fetch(`https://car-toy-server-two.vercel.app/addedtoys/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

@@ -11,14 +11,14 @@ const AllToys = () => {
     const {fpicId, fsetPicId} = useContext((AuthContext));
 
     useEffect(() => {
-        fetch('http://localhost:5000/toys?limit=10')
+        fetch('https://car-toy-server-two.vercel.app/toys?limit=10')
             .then(res => res.json())
             .then(data => setTabs(data))
     }, [])
 
   
     useEffect(() => {
-        fetch('http://localhost:5000/addedtoys?limit=10')
+        fetch('https://car-toy-server-two.vercel.app/addedtoys?limit=10')
             .then(res => res.json())
             .then(data => setTabs2(data))
     }, [])

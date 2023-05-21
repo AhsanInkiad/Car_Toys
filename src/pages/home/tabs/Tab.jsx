@@ -11,7 +11,7 @@ const Tab = () => {
     const {picId, setPicId} = useContext((AuthContext));
 
     useEffect(() => {
-        fetch('http://localhost:5000/toys')
+        fetch('https://car-toy-server-two.vercel.app/toys')
             .then(res => res.json())
             .then(data => setTabs(data.slice(0, 3)))
     },[])
@@ -36,7 +36,7 @@ const Tab = () => {
                     <div >
                         {currentTab === `${tab.c_id}` && <div>
 
-                            <div className=' lg:flex md:gap-6 lg:justify-between m-12'>
+                            <div className=' lg:flex  lg:justify-between m-12'>
                                 {
                                     tab.toysgula.map((toy) =>
                                         <div className="card mb-10 drop-shadow-2xl lg:card-side bg-[#1A1A1A] shadow-xl">

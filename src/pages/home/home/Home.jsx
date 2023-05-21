@@ -23,7 +23,7 @@ const Home = () => {
                     <div data-aos="zoom-in" className="mx-auto md:16 lg:mt-32 hero-content text-center text-white">
                         <div className="lg:border p-8 max-w-md">
                             <h1 className="mb-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">Hello there</h1>
-                            <p className="mb-5 ">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <p className="mb-5 ">Welcome to <span className='text-xl font-bold text-[#EAB902]'>Fast & Curious!</span>  Discover the thrilling world of car toys with our extensive collection. From classic models to cutting-edge designs, we offer a wide range of categories to fuel your passion for automotive fun.</p>
                             <div>
                                 <p className='text-center text-white text-sm font-semibold mb-2'>Click to connect with us :</p>
                                 <div className=" mx-auto Hcard">
@@ -125,7 +125,7 @@ const Home = () => {
            </div>
            <p data-aos="zoom-in" className=' text-center text-white text-3xl font-bold mb-10'>Why Choose Us? :</p>
 
-           <CardShow className="h-3/4"></CardShow>
+           <CardShow></CardShow>
            
 
 
