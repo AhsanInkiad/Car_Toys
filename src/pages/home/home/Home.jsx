@@ -114,10 +114,10 @@ const Home = () => {
             <p data-aos="zoom-in" className=' text-center text-white text-3xl font-bold mb-10'>Our Partners :</p>
            <div className='w-1/2 mx-auto'>
            <Marquee className=' border mb-32 py-4 '>
-                <img className='w-32 h-32 mr-36 rounded-lg' src="https://images.unsplash.com/photo-1601158935942-52255782d322?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80" />
-                <img className='w-32 h-32 mr-36 rounded-lg' src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" />
-                <img className='w-32 h-32 mr-36 rounded-lg' src="https://images.unsplash.com/photo-1557053964-937650b63311?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1597&q=80" />
-                <img className='w-32 h-32 mr-36 rounded-lg' src="https://images.unsplash.com/photo-1555597906-44a7f7e3e0e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" />
+                <img className=' w-16 h-16 md:w-20 md:h-20 lg:w-32 lg:h-32 mr-36 rounded-lg' src="https://images.unsplash.com/photo-1601158935942-52255782d322?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80" />
+                <img className='w-16 h-16 md:w-20 md:h-20 lg:w-32 lg:h-32 mr-36 rounded-lg' src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" />
+                <img className='w-16 h-16 md:w-20 md:h-20 lg:w-32 lg:h-32 mr-36 rounded-lg' src="https://images.unsplash.com/photo-1557053964-937650b63311?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1597&q=80" />
+                <img className='w-16 h-16 md:w-20 md:h-20 lg:w-32 lg:h-32 mr-36 rounded-lg' src="https://images.unsplash.com/photo-1555597906-44a7f7e3e0e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" />
            
             </Marquee>
 
