@@ -45,7 +45,7 @@ const NavBar = () => {
                     <ul tabIndex={0} className="text-white menu menu-compact dropdown-content mt-3 p-2 shadow border border-[#EAB902] bg-[#1D1F1F] rounded-box w-52">
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='alltoys'>All Toys</Link></li>
-                        {user && <li><a>My Toys</a></li>}
+                        {user && <li><Link to="mytoy">My Toys</Link> </li>}
                         {user && <li><Link to='addtoy'>Add a Toy</Link></li>}
                         <li><Link to='blogs'>Blog</Link></li>
 
